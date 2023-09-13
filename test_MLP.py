@@ -32,6 +32,7 @@ X = tf.placeholder(tf.float32,[None,784])
 # weight, bias 값 초기화 / 정규분포 랜덤 값
 # 784: 들어가는 값, 10: 나오는 값 0~9
 W = tf.Variable(tf.random_normal([784, 10], stddev=0.1))
+
 b = tf.Variable(tf.random_normal([10], stddev=0.1))
 
 
